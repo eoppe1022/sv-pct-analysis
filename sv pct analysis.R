@@ -37,7 +37,7 @@ all_sit <- all_sit %>%
 
 # filtering 5v5 goalies to 5v5 TOI >= 500
 five_v_five <- five_v_five %>%
-  filter(TOI > 500)
+  filter(TOI >= 500)
 
 all_sit_vs_5v5 <- five_v_five %>%
   select(season = Season, player = Player, hd_5v5_sv_pct = `HDSV%`) %>%
